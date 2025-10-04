@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medi-Tech Healthcare Portal - Welcome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #5b21b6, #7c3aed);
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(to right, #7c3aed, #5b21b6);
+    }
+
+    h1 {
+      color: #5b21b6;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+      background: #7c3aed;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #5b21b6;
+      transform: translateY(-2px);
+    }
+
+    a {
+      color: #7c3aed;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #5b21b6;
+      text-decoration: underline;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 25px 0;
+    }
+
+    .feature {
+      width: 48%;
+      text-align: center;
+      margin-bottom: 15px;
+      padding: 15px 10px;
+      border-radius: 8px;
+      background: #f8f9fa;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature i {
+      font-size: 24px;
+      color: #7c3aed;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+      
+      .feature {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Welcome to Medi-Tech</h1>
+      <p>Your trusted healthcare technology solution. Access your medical records, schedule appointments, and connect with healthcare providers.</p>
+      
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-file-medical"></i>
+          <p>Medical Records</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-calendar-check"></i>
+          <p>Appointments</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-prescription-bottle"></i>
+          <p>Fitness</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-robot"></i>
+          <p>AI Assistant</p>
+        </div>
+      </div>
+      
+      <button class="btn" onclick="window.location.href='signup.html'">Get Started</button>
+      <p>Already have an account? <a href="signin.html">Sign in</a></p>
+    </div>
+  </div>
+</body>
+</html>

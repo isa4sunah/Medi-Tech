@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medi-Tech Healthcare Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 400px;
+      height: 90vh;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #7c3aed;
+
+      color: white;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .main-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 15px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    /* Bottom nav glass style */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 12px 0;
+
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+      border-radius: 20px 20px 0 0;
+    }
+
+    .bottom-nav a {
+      color: gray;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .bottom-nav a.active {
+      color: #7c3aed; /* WhatsApp green */
+    }
+
+    .bottom-nav a:hover {
+      transform: scale(1.2);
+    }
+    .profile{
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <div class="header">
+      <h2>Medi-Tech</h2>
+      <div class="profile">
+      <a href="sevices/profile.html"><i href class="fas fa-user-circle fa-lg"></i></a>
+      </div>
+
+    </div>
+
+    <div class="main-content">
+      <div class="card">Welcome to Medi-Tech Healthcare Portal!</div>
+      <div class="card">Your medical records are safe and secure.</div>
+      <div class="card">AI assistant will guide you with health tips.</div>
+    </div>
+
+    <!-- Bottom Nav -->
+    <div class="bottom-nav">
+      <a href="#" class="active"><i class="fas fa-newspaper"></i></a>
+      <a href="services/ai.html"><i class="fas fa-robot"></i></a>
+      <a href="services/fitness.html"><i class="fas fa-dumbbell"></i></a>
+      <a href="services/emergency.html"><i class="fas fa-triangle-exclamation"></i></a>
+      <a href=""><i class="fas fa-ellipsis"></i></a>
+
+    </div>
+  </div>
+</body>
+</html>
